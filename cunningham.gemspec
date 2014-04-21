@@ -8,9 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = Cunningham::VERSION
   spec.authors       = ["Corey Woodcox"]
   spec.email         = ["corey.woodcox@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
+  spec.description   = %q{Cunningham is a gem for caching requests to the Stripe
+                          API to make most interactions with it fast as a C-4R.}
   spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/tanner-labs/cunningham"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +21,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "pry"
+
+  spec.add_dependency "stripe", "~> 1.11.0"
+  spec.add_dependency "redis", "~> 3.0.7"
 end
