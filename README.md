@@ -9,7 +9,7 @@ stripes on your app with Cunningham!
 ## Installation
 
 You'll need a running instance of Redis on your local machine, or something in
-the REDIS_URL environment variable that will direct Cunningham to a Redis
+the `REDIS_URL` environment variable that will direct Cunningham to a Redis
 instance, or we'll go all vintage NASCAR on you and crash.
 
 Add this line to your application's Gemfile:
