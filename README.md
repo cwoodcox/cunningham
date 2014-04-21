@@ -1,5 +1,7 @@
 # Cunningham
 
+![Cunningham C-4R Racer](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Cunningham_C4R.JPG/626px-Cunningham_C4R.JPG)
+
 Tired of your applications calls to Stripe API taking forever? Don't want to
 store the data Stripe already so elegantly manages for you? Put some racing
 stripes on your app with Cunningham!
