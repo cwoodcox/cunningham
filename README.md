@@ -1,8 +1,14 @@
 # Cunningham
 
-TODO: Write a gem description
+Tired of your applications calls to Stripe API taking forever? Don't want to
+store the data Stripe already so elegantly manages for you? Put some racing
+stripes on your app with Cunningham!
 
 ## Installation
+
+You'll need a running instance of Redis on your local machine, or something in
+the REDIS_URL environment variable that will direct Cunningham to a Redis
+instance, or we'll go all vintage NASCAR on you and crash.
 
 Add this line to your application's Gemfile:
 
@@ -18,7 +24,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Use Stripe! 
+
+Cunningham automatically injects itself in front of the Stripe gem
+and checks its Redis cache for the entity you're looking for before it calls out
+to the web service. If it can't find anything, it will allow the call to follow
+its normal path up the call chain out to the API. Once it's got an object back,
+it will store it FOREVER because nothing invalidates the cache yet! SOUNDS
+AWESOME, EH?
+
+Soon, Cunningham will include a mountable Rails engine that you can set up
+quickly to receive Stripe webhooks which will invalidate the cache based on the
+events Stripe sends to your application, making the cache mostly super accurate!
 
 ## Contributing
 
