@@ -1,4 +1,4 @@
-# Cunningham
+# Cunningham [![CircleCI](https://circleci.com/gh/tanner-labs/cunningham.png?circle-token=d0d8dfe7fdca1c740a6e65a9503f461267126bb7)](https://circleci.com/gh/tanner-labs/cunningham)
 
 ![Cunningham C-4R Racer](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Cunningham_C4R.JPG/626px-Cunningham_C4R.JPG)
 
@@ -26,7 +26,7 @@ Or install it yourself as:
 
 ## Usage
 
-Use Stripe! 
+Use Stripe!
 
 Cunningham automatically injects itself in front of the Stripe gem
 and checks its Redis cache for the entity you're looking for before it calls out
